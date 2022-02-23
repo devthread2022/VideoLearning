@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.BasicDetails"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_baseline_keyboard_arrow_left_24"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your basic details"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:textColor="#5a5a5a"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="We will send an OTP for verification"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#5a5a5a"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:background="@drawable/box_back">
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/plane"
+            android:layout_marginStart="5dp"
+            android:hint="Full name"
+            android:textSize="15sp"
+            android:textColor="#5a5a5a"
+            android:textColorHint="#959595"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:background="@drawable/box_back">
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/plane"
+            android:layout_marginStart="5dp"
+            android:hint="Email Address"
+            android:textSize="15sp"
+            android:textColor="#5a5a5a"
+            android:textColorHint="#959595"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:background="@drawable/box_back">
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/plane"
+            android:layout_marginStart="5dp"
+            android:hint="Address"
+            android:textSize="15sp"
+            android:textColor="#5a5a5a"
+            android:textColorHint="#959595"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_back"
+            android:layout_gravity="bottom"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
